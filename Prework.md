@@ -4,6 +4,8 @@ Hey everyone, this markdown file will go over the prework that you will need to 
 
 The prework is catered for MacOS, but every file/application has a windows alternative that I will also link.
 
+ALSO, for Windows users, you will not be able to follow along completely with the demo. This prework is just a way for you to familiarize yourself with the programs. You really do not have to do any of this, but you can still mess around with the result if you want. Having a Soundfont player is a very niche but awesome thing for any audiophile!
+
 ## Downloads
 
 ### JuicySF
