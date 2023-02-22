@@ -37,9 +37,9 @@ while(True):
         num = random.randint(36,51)
     msg = mido.Message('note_on', note=num, velocity=100, time=0)
     port.send(msg)
+    time.sleep(msg_off.time/200)
     msg_off = mido.Message('note_on', note=num, velocity=0, time=96)
     port.send(msg_off)
-    time.sleep(msg_off.time/200)
     # lets make sure there arent any repeats
     prev_num = num
 

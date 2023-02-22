@@ -15,7 +15,8 @@ def signal_handler(signal, frame):
     port.send(msg_off)
     sys.exit(0)
 
-signal.signal(signal.SIGINT, signal_handler)
+signal.signal(signal.SIGINT, signal_handler) 
+# signal interupt
 
 ###
 
