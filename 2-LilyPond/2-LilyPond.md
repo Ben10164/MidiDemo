@@ -5,7 +5,4 @@ a really weird language...
 
 `brew install lilypond`
 
-`
-
-## my reasoning
-[Click here...](2-LilyPond.ly)
+`midi2ly 2-LilyPond.mid`
