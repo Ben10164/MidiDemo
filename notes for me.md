@@ -32,7 +32,7 @@ for msg in mid.play():  # .play will result in the midi messages
     if(msg_dict['type'] == "note_on"):
         if(msg_dict['velocity'] == 0):
             # So weird thing about MIDI, some (most) midi controllers use a note velocity of 0 to signal the end of a note
-            # which wouldnt be weird if there wasnt a note_off msg...
+            # which wouldn't be weird if there wasn't a note_off msg...
 
             # new_msg = mido.Message('note_on', note=msg_dict['note'], velocity=0, time=msg_dict['time'])
             
@@ -152,7 +152,7 @@ while(True):
     time.sleep(msg_off.time/200)
     msg_off = mido.Message('note_on', note=num, velocity=0, time=96)
     port.send(msg_off)
-    # lets make sure there arent any repeats
+    # lets make sure there aren't any repeats
     prev_num = num
 ```
 
