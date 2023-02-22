@@ -68,14 +68,25 @@ First off, Soundfonts are basically
    6. During the demo there will be an Active MIDI input, so keep in mind that this is where you find the option to toggle those on and off.
 6. Close the Options window and press on different notes on the keyboard to make sure that it is making noise!
 7. It's a lot of fun messing around with parameters and exploring how Video Game Music Soundfonts worked!
-   * Fun Fact: If you've played FF7 before, LB2 Choir is the vocals for the Sephiroth theme. Select that sound and press `C3` on the piano! The vocals were split into repeated phrases and seperated chromaticall from notes `C3` to `F3` as a way of compressing the file size. Lyrics in Video Game Music, or even Soundfonts in general, was extremely uncommon due to the way that Soundfonts work. *Uematsu* and the sound team really wanted there to be lyrics to this song since it is the final boss (and also a multi-hour boss fight), so they devised this strategy as a way to divide a vocal sample into subsamples. There is actually a theory that the entirety of the Sepheroth battle is on a separate disc (disc 3) as a way to include higher quality assets (both musically and visually)!
+   * Fun Fact: If you've played FF7 before, LB2 Choir is the vocals for the Sephiroth theme. Select that sound and press `C3` on the piano! The vocals were split into repeated phrases and seperated chromatically from notes `C3` to `F3` as a way of compressing the file size. Lyrics in Video Game Music, or even Soundfonts in general, was extremely uncommon due to the way that Soundfonts work. *Uematsu* and the sound team really wanted there to be lyrics to this song since it is the final boss (and also a multi-hour boss fight), so they devised this strategy as a way to divide a vocal sample into subsamples. There is actually a theory that the entirety of the Sepheroth battle is on a separate disc (disc 3) as a way to include higher quality assets (both musically and visually)!
 
 ## Note to Windows Users
 
 Windows does not come with a native virtual MIDI driver, and my demo will sadly require one.  
 Virtual MIDI drivers are extremely complex and in all fairness I do not want you to have to download and set up one.  
-I'm really sorry if you were looking forward to programming alone-side me, but I do not feel comfortable asking you to modify the drivers of your computer (especially adding ones I have not personally used [virtual MIDI driver's are new to me, so I haven't done it back home]).  
-You are done with the setup :)
+I'm really sorry if you were looking forward to programming alone-side me (Trevor), but I do not feel comfortable asking you to modify the drivers of your computer (especially adding ones I have not personally used since virtual MIDI driver's are new to me, so I haven't done it back home). If you feel comfortable researching and finding a way to get it set up, continue with this document!  
+If not, you are done with the setup :)  
+
+If you really want to try it you can go for it. For the demo we will want to have an open Virtual MIDI port. To test out if you have any open you can do the following after installing `mido` and `python-rtmidi`
+
+```py
+>>> conda install mido (pip install mido)
+>>> pip install python-rtmidi
+import mido
+print(mido.get_output_names())
+```
+
+If anything is printed, then you should be good for the demo. Skip to step 6 in the next section to see if it shows up in JuicySF.
 
 ## Setting up an IAC Bus on MacOS
 
